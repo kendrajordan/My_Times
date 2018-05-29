@@ -34,7 +34,7 @@ padding-left: 20px;
 .main{
   display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   border: 2px solid black;
 }
@@ -60,4 +60,35 @@ padding-left: 20px;
   margin:0;
   padding:0;
   border: 1px solid black;
+}
+.image1{
+  color:white;
+  display:flex;
+  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-main.png');
+  background-size: cover;
+height:300px;
+
+}
+.image2{
+background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-2.png');
+color:white;
+display:flex;
+background-repeat: repeat;
+height:300px;
+}
+.image3{
+  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-3.png');
+  color:white;
+  display:flex;
+  background-repeat: repeat;
+  height:300px;
+
+}
+.image4{
+  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-1.png');
+  color:white;
+  display:flex;
+  background-repeat: repeat;
+  height:300px;
+
 }
