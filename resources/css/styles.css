@@ -10,6 +10,7 @@ padding-right:50px;
 font-weight:bold;
 justify-content: space-between;
 align-items:center;
+
 }
 .group{
   display: flex;
@@ -28,4 +29,35 @@ padding-left: 20px;
 }
 .header a{
   color:black;
+}
+/*main container*/
+.main{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid black;
+}
+.column{
+  display:flex;
+  flex-direction: column;
+
+  /*border:1px solid black;*/
+
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+.story, .story p{
+  margin:0;
+  padding:0;
+  border: 1px solid black;
 }
