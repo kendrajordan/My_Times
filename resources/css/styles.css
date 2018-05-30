@@ -1,49 +1,55 @@
-/*header*/
+body{
+  margin-top:  0;/*Fix the header to the top*/
+}
 .header{
-display:flex;
-border-bottom:1px solid black;
-font-family:Verdana;
-font-size:14px;
-padding-bottom: 10px;
-padding-left:30px;
-padding-right:50px;
-font-weight:bold;
-justify-content: space-between;
-align-items:center;
+  display:flex;/* Flex container for header*/
+  align-items: center;
+  font-family: 'Verdana' sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  position:fixed;
+  z-index: 5;
+  width:100%;
+  padding-bottom: 10px;
+  padding-top:10px;
+  border-bottom: 1px solid black;
 
 }
-.group{
+.logo{
   display: flex;
-  align-items: center;
+  border: 1px solid black;
+  padding-right: 840px;
+  padding-left: 25px;
 }
-.group span{
-  list-style: none;
-  display:inline-block;
+.logo p{
   color:MediumAquamarine;
-padding-left: 10px;
+  display: inline-block;
+  align-self: center;/*center text for logo*/
+  padding-left: 10px;
 }
-.links li {
+.links li{
+  display: inline-block;
   list-style: none;
-  display:inline-block;
-padding-left: 20px;
+  padding-right:10px;
+  padding-left: 10px;
 }
-.header a{
+.links a{
   color:black;
 }
-/*main container*/
+/*End of header*/
 .main{
   display:flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  border: 2px solid black;
+  border:1px solid black;
+  justify-content: space-between;/*columns to the left*/
+  top:120px;
+  position:relative;
 }
 .column{
   display:flex;
   flex-direction: column;
-
-  /*border:1px solid black;*/
-
+  justify-content: flex-start;/*columns on the top of the main*/
+  border:1px solid black;
 }
 .column.large {
   width: 630px;
@@ -56,39 +62,46 @@ padding-left: 20px;
 .column.small {
   width: 240px;
 }
-.story, .story p{
-  margin:0;
-  padding:0;
+.story{
+  border:1px solid black;
+  font-family: Georgia;
+  color: black;
+}
+.story p{
+  font-size: 17px;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.image.Mom{
+  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-main.png');
+  background-repeat: repeat;
+  font-size: 40px;
+
+}
+.image.Earth, .image.Camera, .image.Cat{
+  margin-top: 18px;
   border: 1px solid black;
 }
-.image1{
-  color:white;
-  display:flex;
-  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-main.png');
-  background-size: cover;
-height:300px;
+.image.Earth{
+  background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-2.png');
+  background-repeat: repeat;
 
 }
-.image2{
-background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-2.png');
-color:white;
-display:flex;
-background-repeat: repeat;
-height:300px;
-}
-.image3{
+.image.Camera{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-3.png');
-  color:white;
-  display:flex;
   background-repeat: repeat;
-  height:300px;
+
 
 }
-.image4{
+.image.Cat{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-1.png');
-  color:white;
-  display:flex;
   background-repeat: repeat;
-  height:300px;
-
 }
