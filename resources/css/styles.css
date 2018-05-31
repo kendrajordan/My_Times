@@ -51,8 +51,12 @@ body{
   justify-content: flex-start;/*columns on the top of the main*/
   border:1px solid black;
 }
-.column.large {
+.column.large {/*Change the flex direction to row and wrap the flex items.*/
   width: 630px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
 }
 
 .column.medium {
@@ -66,20 +70,27 @@ body{
   border:1px solid black;
   font-family: Georgia;
   color: black;
+  
 }
+
 .story p{
   font-size: 17px;
+
 }
 .image{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+
+/*To center the text vertically, you must use flex direction to column, center the content on the x-axis and use text align*/
   height: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+
 }
+
 .image.Mom{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-main.png');
   background-repeat: repeat;
@@ -89,6 +100,7 @@ body{
 .image.Earth, .image.Camera, .image.Cat{
   margin-top: 18px;
   border: 1px solid black;
+  text-align: center;
 }
 .image.Earth{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-2.png');
@@ -104,4 +116,32 @@ body{
 .image.Cat{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-1.png');
   background-repeat: repeat;
+
+}
+/*order of the flex items and change the height an width of some of the flex items*/
+.image.Mom{
+  order:1;
+}
+.story.Valley{
+  order:2;
+}
+.story.Orca{
+  order:3;
+
+  width:300px;
+}
+.story.Burger{
+  order:3;
+
+  width:300px;
+}
+.image.Earth{
+  order:4;
+
+  width:300px;
+}
+.image.Camera{
+  order:4;
+
+  width:300px;
 }
