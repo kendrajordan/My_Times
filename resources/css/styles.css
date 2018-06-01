@@ -1,5 +1,6 @@
 body{
   margin-top:  0;/*Fix the header to the top*/
+
 }
 .header{
   display:flex;/* Flex container for header*/
@@ -18,7 +19,6 @@ body{
 }
 .logo{
   display: flex;
-  border: 1px solid black;
   padding-right: 840px;
   padding-left: 25px;
 }
@@ -28,19 +28,24 @@ body{
   align-self: center;/*center text for logo*/
   padding-left: 10px;
 }
+.links ul{
+display: inline-flex;
+padding-left: 0;
+
+}
 .links li{
-  display: inline-block;
+  margin-right: 15px;
+  margin-left: 10px;
   list-style: none;
-  padding-right:10px;
-  padding-left: 10px;
+
 }
 .links a{
   color:black;
+
 }
 /*End of header*/
 .main{
   display:flex;
-  border:1px solid black;
   justify-content: space-between;/*columns to the left*/
   top:120px;
   position:relative;
@@ -49,7 +54,7 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;/*columns on the top of the main*/
-  border:1px solid black;
+
 }
 .column.large {/*Change the flex direction to row and wrap the flex items.*/
   width: 630px;
@@ -65,23 +70,29 @@ justify-content: space-between;
 
 .column.small {
   width: 240px;
+  display: flex;
+  flex-direction: column;
+
+}
+.column.small h2{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 .story{
-  border:1px solid black;
+
   font-family: Georgia;
   color: black;
-  
-}
 
+}
 .story p{
   font-size: 17px;
 
 }
 .image{
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content: flex-start;
   flex-direction: column;
-
 /*To center the text vertically, you must use flex direction to column, center the content on the x-axis and use text align*/
   height: 300px;
   font-family: Georgia;
@@ -90,7 +101,9 @@ justify-content: space-between;
   color: white;
 
 }
-
+.image p{
+  margin: 0;
+}
 .image.Mom{
   background-image: url('/home/kendra/Developer/repos/mytimes/resources/images/img-story-main.png');
   background-repeat: repeat;
@@ -121,6 +134,7 @@ justify-content: space-between;
 /*order of the flex items and change the height an width of some of the flex items*/
 .image.Mom{
   order:1;
+
 }
 .story.Valley{
   order:2;
@@ -144,4 +158,61 @@ justify-content: space-between;
   order:4;
 
   width:300px;
+}
+/*News Bites lists*/
+.bites ul{
+  padding-left: 0;
+}
+.bites li{
+list-style: none;
+text-align: left;
+background-color: WhiteSmoke;
+font-family: Verdana;
+font-size: 12px;
+color: DimGray;
+padding: 12px;
+border-bottom: 1px solid black;
+}
+.footer{
+  position: relative;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: flex-start;
+background-color: MediumAquamarine;
+margin: auto;
+font-family: Verdana;
+font-size: 12px;
+text-align: center;
+top:200px;
+}
+.box .footerlogo{
+  font-family: Georgia;
+font-size: 16px;
+font-weight: bold;
+color: white;
+}
+
+.box.footerlinks li{
+  display: inline-block;
+  list-style: none;
+
+}
+.box.footerlinks li a{
+  color:black;
+
+}
+
+.box.copyright{
+display: inline-block;
+align-self: flex-end;
+}
+.box{
+  width:45%;
+  height:auto;
+  background-color: green;
+  border: 1px solid yellow;
+
 }
